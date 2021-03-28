@@ -3,16 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-ul{
-  margin: 35px 35px;
+/* Header */
+header{
+  padding: 30px 45px;
+  color: lightgreen;
+  background-color: darkgreen;
+  height: 15vh;
+  display: flex;
+  align-items: center;
 }
-ul li{
-  /* font-size: 30px; */
+header h1{
+  font-size: 50px;
+}
+/* Main */
+main{
+  padding: 15px 60px;
+  background-color: lightgreen;
+  min-height: 85vh;
+  position: relative;
+}
+main h3{
+  font-size: 35px;
+}
+main li{
+  font-size: 25px;
+  padding: 10px 0px;
 }
 span{
   margin-left: 15px;
   color: red;
   cursor: pointer;
   font-weight: bold;
+}
+/* Input */
+input{
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* Button */
+button{
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  cursor: pointer;
 }

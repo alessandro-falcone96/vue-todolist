@@ -11,13 +11,22 @@
   </head>
   <body>
 
-    <main id="listaToDo">
-      <ul>
-        <li v-for="(item, index) in lista">{{item}}<span v-on:click="removeItem(index)">X</span></li>
-      </ul>
+    <header>
+      <h1>Lista della Spesa Interattiva</h1>
+    </header>
 
-      <input type="text" placeholder="Inserisci un nuovo item" v-model="newItem">
-      <button type="button" v-on:click="addItem">Inserisci</button>
+    <main>
+
+      <h3>Cose da comprare:</h3>
+
+      <div id="listaToDo">
+        <ul>
+          <li v-for="(item, index) in lista">{{item}}<span v-on:click="removeItem(index)">X</span></li>
+        </ul>
+
+        <input type="text" placeholder="Inserisci un nuovo item" v-model="newItem" @keyup.13="addItem">
+        <button type="button" v-on:click="addItem">Inserisci</button>
+      </div>
 
     </main>
 

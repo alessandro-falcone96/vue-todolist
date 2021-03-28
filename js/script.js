@@ -4,11 +4,11 @@ var app = new Vue(
     data: {
       newItem: "",
       lista: [
-        'fare il bucato',
-        'guardare netflix',
-        'fare il pranzo',
-        'finire il compito',
-        'andare a dormire'
+        'carne',
+        'pesce',
+        'frutta',
+        'verdura',
+        'gelato'
       ]
     },
     methods: {
@@ -17,6 +17,7 @@ var app = new Vue(
       },
       addItem: function() {
         this.lista.push(this.newItem);
+        this.newItem = "";
       }
     }
   }
