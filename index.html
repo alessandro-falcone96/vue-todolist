@@ -11,7 +11,13 @@
   </head>
   <body>
 
-    <main>
+    <main id="listaToDo">
+      <ul>
+        <li v-for="(item, index) in lista">{{item}}<span v-on:click="removeItem(index)">X</span></li>
+      </ul>
+
+      <input type="text" placeholder="Inserisci un nuovo item" v-model="newItem">
+      <button type="button" v-on:click="addItem">Inserisci</button>
 
     </main>
 

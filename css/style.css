@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul{
+  margin: 35px 35px;
+}
+ul li{
+  /* font-size: 30px; */
+}
+span{
+  margin-left: 15px;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
